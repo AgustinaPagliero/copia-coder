@@ -1,0 +1,25 @@
+/*fotos*/
+.foto-titulo{
+    margin: 30px 10px 10px 40px;
+}
+
+.carousel{
+    width: 711px;
+    margin: 0 auto;
+}
+@media(max-width:850px){
+    .carousel {
+        width: auto;
+    }
+}
+
+/*animacion para agrandar la imagen*/
+.carousel {
+    transition: transform 5s;
+}
+
+.carousel:hover {
+    transform: scale(1.5);
+    max-height: 100%;
+    max-width: 100%;
+}

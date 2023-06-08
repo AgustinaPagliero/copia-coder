@@ -1,0 +1,73 @@
+/* Estilos para el formulario */
+.formulario-contacto {
+    max-width: 400px; /* Establece el ancho máximo del formulario en 400px */
+    margin: 0 auto; /* Centra el formulario horizontalmente en el contenedor */
+}
+  
+/* Estilos para las etiquetas de los campos */
+label {
+    display: block; /* Hace que las etiquetas sean elementos de bloque, ocupando una línea completa */
+    margin-top: 10px; /* Agrega un margen superior de 10px a las etiquetas */
+    font-weight: bold; /* Establece el peso de la fuente en negrita para las etiquetas */
+}
+  
+/* Estilos para los campos de entrada y el área de texto */
+input,
+textarea {
+    width: 100%; /* Hace que los campos ocupen el ancho completo del contenedor */
+    padding: 5px; /* Agrega un relleno interno de 5px a los campos */
+    margin-top: 5px; /* Agrega un margen superior de 5px a los campos */
+    border: 1px solid #ccc; /* Establece un borde de 1px sólido de color gris claro (#ccc) para los campos */
+    border-radius: 4px; /* Agrega bordes redondeados a los campos */
+}
+  
+/* Estilos para el botón de envío */
+input[type="submit"] {
+    background-color: #5ec954; /* Establece el color de fondo del botón de envío en verde (#5ec954) */
+    color: white; /* Establece el color de texto del botón de envío en blanco */
+    border: none; /* Elimina el borde del botón de envío */
+    padding: 10px 20px; /* Agrega un relleno interno de 10px en la parte superior e inferior y 20px en los lados del botón de envío */
+    margin-top: 10px; /* Agrega un margen superior de 10px al botón de envío */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón de envío */
+}
+
+/* Estilos para los mensajes de error */
+span {
+    color: red; /* Establece el color de texto de los mensajes de error en rojo */
+}
+  
+/* Estilos para los campos requeridos */
+input:required,
+textarea:required {
+    border-color: #5ec954; /* Establece el color del borde de los campos requeridos en verde (#5ec954) */
+}
+
+/* Estilos para los campos válidos */
+input:valid,
+textarea:valid {
+    border-color: #ccc; /* Establece el color del borde de los campos válidos en gris claro (#ccc) */
+}
+
+.formulario-mapa {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 40vh; /* Ajusta la altura al 100% del viewport */
+  }
+  
+  .formulario-mapa iframe {
+    margin-right: 20px; /* Agrega un margen derecho para separar el mapa del formulario */
+  }
+  
+  @media (max-width: 768px) {
+    .formulario-mapa {
+      flex-direction: column; /* Cambia la disposición de los elementos a columna en pantallas pequeñas */
+    }
+  
+    .formulario-mapa iframe {
+      margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+      margin-bottom: 20px; /* Agrega un margen inferior para separar el mapa del formulario */
+      width: auto;
+    }
+  }
+  
