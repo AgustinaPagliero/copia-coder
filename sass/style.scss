@@ -1,0 +1,19 @@
+//imports
+@import "barra-de-navegacion/barra-navegacion";
+@import "pie-de-pagina/footer";
+@import "main/main";
+@import "servicios/servicios";
+@import "fotos/fotos";
+@import "convenio/convenio";
+@import "contacto/contacto";
+
+/* Estilos generales */
+body {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    font-family: Arial, sans-serif; 
+    position: relative;
+    overflow-x: hidden;/* Oculta la barra de desplazamiento horizontal */
+}
+ 

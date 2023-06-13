@@ -1,0 +1,49 @@
+main{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 10px;
+    font-size: 2vh;
+}
+/*index*/
+.main_section {
+    background-image: linear-gradient(to right,#faf6e4, white);/*Establece el color de fondo de la sección principal con degradado hacia la izquierda*/
+    padding: 50px; /* Establece el relleno de la sección principal */
+    margin-left: 20px; /* Establece el margen izquierdo de la lista de la sección principal */
+}
+
+.main-section_titulo {
+    color: #4CAF50; /* Establece el color del título de la sección principal */
+    margin-left: 20px; /* Establece el margen izquierdo del título de la sección principal */
+}
+
+.main-section_texto1 {
+    font-size: auto; /* Establece el tamaño de fuente del texto de la sección principal */
+}
+
+.main-section_lista1 {
+    margin-left: 20px; /* Establece el margen izquierdo de la lista de la sección principal */
+}
+
+.main-section_lista1 li {
+    list-style-type: none; /* Elimina los puntos de la lista de la sección principal */
+    margin: 0 auto;
+}
+
+.main-section-div_p3 {
+    font-weight: bold; /* Establece el peso en negrita del párrafo 3 del div de la sección principal */
+}
+
+
+.main_section-div_lista2 li {
+    list-style-type: none; /* Elimina los puntos de la lista 2 del div de la sección principal */
+    margin-bottom: 10px; /* Establece el margen inferior de cada elemento de la lista 2 del div de la sección principal */
+}
+@media (max-width: 768px) {
+    .main-section_arbol {
+      max-width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+}

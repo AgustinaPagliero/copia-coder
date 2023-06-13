@@ -1,6 +1,3 @@
-
-
-/*# sourceMappingURL=style.css.map */
 @charset "UTF-8";
 /* Estilos para la barra de navegación */
 .encabezado {
@@ -324,3 +321,4 @@ body {
   overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
 }
 
+/*# sourceMappingURL=style.css~.map */

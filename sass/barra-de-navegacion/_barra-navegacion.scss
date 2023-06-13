@@ -1,0 +1,109 @@
+/* Estilos para la barra de navegación */
+.encabezado {
+  background-color: #5ec954; /* Establece el color de fondo del encabezado en verde */
+  color: white; /* Establece el color del texto del encabezado en blanco */
+  padding: 10px; /* Establece el relleno interno del encabezado en 10 píxeles */
+  display: flex; /* Utiliza flexbox para alinear y distribuir los elementos del encabezado */
+  justify-content: space-between; /* Distribuye los elementos del encabezado de manera uniforme en el espacio disponible */
+  align-items: center; /* Centra verticalmente los elementos del encabezado */
+  width: 100%; /* Establece el ancho al 100% */ 
+  position: fixed; /* Establece la posición fija del encabezado */
+  top: 0; /* Establece la posición superior del encabezado */
+  left: 0; /* Establece la posición izquierda del encabezado */
+  right: 0; /* Establece la posición derecha del encabezado */
+  z-index: 9999; /* Establece la posición z del encabezado */ 
+}
+
+/* Establece un contenedor flexible para los elementos del encabezado cuando la pantalla tiene un ancho máximo de 789px */
+@media screen and (max-width: 789px) {
+ .encabezado {
+ display: flex; /* Establece un contenedor flexible para los elementos del encabezado */
+ flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente para mantenerse en la misma línea */
+ justify-content: space-between; /* Distribuye uniformemente los elementos en el espacio disponible */
+ align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    } 
+}
+.encabezado_logo {
+    display: flex; /* Aplicar flexbox para alinear elementos horizontalmente */
+    align-items: center; /* Alinear elementos verticalmente en el centro */
+}
+
+/* Estilos para el logotipo del encabezado */
+.encabezado_logo img {
+    height: 50px; /* Establece la altura de la imagen del logotipo en 50 píxeles */
+    width: auto; /* Permite que el ancho de la imagen del logotipo se ajuste automáticamente */
+    display: inline-block; /* Muestra la imagen en línea con otros elementos */
+}
+  
+/* Estilos para el texto del logotipo del encabezado */
+.encabezado_logo h1 {
+    font-size: 18px; /* Establece el tamaño de fuente del texto del logotipo en 18 píxeles */
+    margin-left: 10px; /* Establece un margen izquierdo de 10 píxeles para el texto del logotipo */
+    display: inline-block; /* Muestra el texto en línea con otros elementos */
+}
+.encabezado-logo_text a {
+    text-decoration: none;
+    color: white; /* Establece el color del texto de los enlaces en blanco */
+    font-weight: normal;
+}
+  
+/* Estilos para los enlaces del encabezado */
+.encabezado_enlaces ul {
+    list-style-type: none; /* Elimina las viñetas de la lista de enlaces */
+    margin: 0; /* Establece el margen exterior de la lista de enlaces en 0 píxeles */
+    padding: 0; /* Establece el relleno interno de la lista de enlaces en 0 píxeles */
+    display: flex; /* Utiliza flexbox para alinear los elementos de la lista en una fila */
+}
+  
+.encabezado_enlaces li {
+    margin-right: 10px; /* Establece un margen derecho de 10 píxeles para los elementos de la lista de enlaces */
+}
+  
+.encabezado_enlaces li a {
+    color: white; /* Establece el color del texto de los enlaces en blanco */
+    text-decoration: none; /* Elimina la decoración subrayada de los enlaces */
+    padding: 5px; /* Establece el relleno interno de los enlaces en 5 píxeles */
+ 
+    white-space: nowrap;/* Establece que el texto no se envuelva en varias líneas */
+    
+}
+ 
+.encabezado_logo {
+ order: 1; /* Establece el orden del elemento .encabezado_logo dentro del contenedor flexible */
+}
+ 
+.encabezado_enlaces {
+ order: 2; /* Establece el orden del elemento .encabezado_enlaces dentro del contenedor flexible */ 
+}
+  
+.encabezado_enlaces li a:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Establece un color de fondo traslúcido al pasar el cursor sobre los enlaces En el código anterior, el 0.5representa la opacidad, donde 0es completamente transparente y 1es completamente opaco. Puede ajustar este valor según sus necesidades para obtener el nivel de transparencia deseado.
+
+    Recuerda que los valores rgba(rojo, verde, azul, alfa) se utilizan para especificar colores con transparencia, donde los valores de rojo, verde y azul están en el rango de 0 a 255, y el valor alfa está en el rango de 0 a 1.
+    
+    Espero que esto te sea util. Si tienes más preguntas, no dudes en preguntar. */
+}
+@media (min-width: 576px) and (max-width: 821px) {
+    .encabezado_enlaces .nav-link {
+      font-size: 12px; /* Tamaño de letra para pantallas entre 307px y 905px */
+    }
+  }
+  
+  .encabezado_enlaces nav ul {
+    margin-right: 0; /* Elimina el margen derecho predeterminado de la lista de enlaces */
+  }
+  
+  .encabezado_enlaces nav ul li {
+    margin-right: 10px; /* Margen derecho entre elementos de la lista de enlaces */
+  }
+  
+  .encabezado_enlaces nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento de la lista */
+  }
+
+  @media (max-width: 767px) {
+    .encabezado_enlaces .nav-item:nth-child(3) .nav-link {
+      overflow-wrap: break-word; /* Aplica el salto de línea en la tercera opción de navegación */
+      word-wrap: break-word; /* Fallback para navegadores más antiguos */
+    }
+  }
