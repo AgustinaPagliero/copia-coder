@@ -13,13 +13,3 @@
     }
 }
 
-/*animacion para agrandar la imagen*/
-.carousel {
-    transition: transform 5s;
-}
-
-.carousel:hover {
-    transform: scale(1.5);
-    max-height: 100%;
-    max-width: 100%;
-}

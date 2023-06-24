@@ -1,6 +1,3 @@
-
-
-/*# sourceMappingURL=style.css.map */
 @charset "UTF-8";
 /* Estilos para la barra de navegación */
 .encabezado {
@@ -80,11 +77,7 @@
 }
 
 .encabezado_enlaces li a:hover {
-  background-color: rgba(0, 0, 0, 0.5); /* Establece un color de fondo traslúcido al pasar el cursor sobre los enlaces En el código anterior, el 0.5representa la opacidad, donde 0es completamente transparente y 1es completamente opaco. Puede ajustar este valor según sus necesidades para obtener el nivel de transparencia deseado.
-
-Recuerda que los valores rgba(rojo, verde, azul, alfa) se utilizan para especificar colores con transparencia, donde los valores de rojo, verde y azul están en el rango de 0 a 255, y el valor alfa está en el rango de 0 a 1.
-
-Espero que esto te sea util. Si tienes más preguntas, no dudes en preguntar. */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 576px) and (max-width: 821px) {
@@ -147,6 +140,12 @@ main {
   margin-top: 100px;
   padding: 10px;
   font-size: 2vh;
+  line-height: 1.5; /* Espaciado entre líneas */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*index*/
@@ -200,6 +199,11 @@ main {
   margin: 2px 2px 5px 2px;
 }
 
+@media (max-width: 500px) {
+  .contenedor-grilla-h1 {
+    margin-top: 2opx;
+  }
+}
 /*fotos*/
 .foto-titulo {
   margin: 30px 10px 10px 40px;
@@ -215,34 +219,24 @@ main {
     width: auto;
   }
 }
-/*animacion para agrandar la imagen*/
-.carousel {
-  transition: transform 5s;
-}
-
-.carousel:hover {
-  transform: scale(1.5);
-  max-height: 100%;
-  max-width: 100%;
-}
-
 /*Convenio*/
-.convenio-lista h3 {
-  margin: 20px 100px 30px 40px;
-}
-
-.convenio-lista p {
-  margin: 5px 100px 5px 40px;
-}
-
-.convenio-lista h2 {
-  margin: 20px 100px 30px 40px;
-}
-
+/* Márgenes generales */
+.convenio-lista h3,
+.convenio-lista p,
+.convenio-lista h2,
 .convenio-lista ul li {
-  margin: 15px 100px 15px 40px;
+  margin: 10px 20px;
 }
 
+/* Media para pantallas de 1024px en adelante */
+@media screen and (min-width: 1024px) {
+  .convenio-lista h3,
+  .convenio-lista p,
+  .convenio-lista h2,
+  .convenio-lista ul li {
+    margin: 19px 20vh;
+  }
+}
 /* Estilos para el formulario */
 .formulario-contacto {
   max-width: 400px; /* Establece el ancho máximo del formulario en 400px */
@@ -324,3 +318,4 @@ body {
   overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
 }
 
+/*# sourceMappingURL=style.css.map */

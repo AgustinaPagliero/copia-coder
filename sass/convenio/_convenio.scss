@@ -1,14 +1,18 @@
 /*Convenio*/
+/* Márgenes generales */
+.convenio-lista h3,
+.convenio-lista p,
+.convenio-lista h2,
+.convenio-lista ul li {
+  margin: 10px 20px; 
+}
 
-.convenio-lista h3{
-    margin: 20px 100px 30px 40px;
-}
-.convenio-lista p{
-    margin: 5px 100px 5px 40px;
-}
-.convenio-lista h2{
-    margin: 20px 100px 30px 40px;
-}
-.convenio-lista ul li{
-    margin: 15px 100px 15px 40px;
+/* Media para pantallas de 1024px en adelante */
+@media screen and (min-width: 1024px) {
+  .convenio-lista h3,
+  .convenio-lista p,
+  .convenio-lista h2,
+  .convenio-lista ul li {
+    margin: 19px 20vh; 
+  }
 }

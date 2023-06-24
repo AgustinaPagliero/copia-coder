@@ -77,12 +77,9 @@
 }
   
 .encabezado_enlaces li a:hover {
-    background-color: rgba(0, 0, 0, 0.5); /* Establece un color de fondo traslúcido al pasar el cursor sobre los enlaces En el código anterior, el 0.5representa la opacidad, donde 0es completamente transparente y 1es completamente opaco. Puede ajustar este valor según sus necesidades para obtener el nivel de transparencia deseado.
-
-    Recuerda que los valores rgba(rojo, verde, azul, alfa) se utilizan para especificar colores con transparencia, donde los valores de rojo, verde y azul están en el rango de 0 a 255, y el valor alfa está en el rango de 0 a 1.
-    
-    Espero que esto te sea util. Si tienes más preguntas, no dudes en preguntar. */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
+
 @media (min-width: 576px) and (max-width: 821px) {
     .encabezado_enlaces .nav-link {
       font-size: 12px; /* Tamaño de letra para pantallas entre 307px y 905px */

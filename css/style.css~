@@ -212,17 +212,6 @@ main {
     width: auto;
   }
 }
-/*animacion para agrandar la imagen*/
-.carousel {
-  transition: transform 5s;
-}
-
-.carousel:hover {
-  transform: scale(1.5);
-  max-height: 100%;
-  max-width: 100%;
-}
-
 /*Convenio*/
 .convenio-lista h3 {
   margin: 20px 100px 30px 40px;
